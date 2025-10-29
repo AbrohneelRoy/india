@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+
+data = in_data
+
+X = data.X
+y = data.Y
+
+X = np.array(X)
+y = np.array(y)
+
+x_vals = X[:, 0]
+y_vals = X[:, 1]
+z_vals = X[:, 2]
+
+fig = plt.figure(figsize=(8, 6))
+ax = fig.add_subplot(111, projection='3d')
+
+xpos = np.arange(len(x_vals))
+ypos = y_vals
+zpos = np.zeros_like(x_vals)
+
+dz = z_vals
+
+ax.bar3d(xpos, ypos, zpos, 0.4, 0.4, dz, color='skyblue', edgecolor='black')
+
+ax.set_xlabel(data.domain.attributes[0].name)
+ax.set_ylabel(data.domain.attributes[1].name)
+ax.set_zlabel(data.domain.attributes[2].name)
+ax.set_title("3D Bar Graph - Lenses Dataset")
+
+plt.show()
