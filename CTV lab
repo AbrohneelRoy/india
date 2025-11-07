@@ -73,13 +73,13 @@ getuid
 
 Exp 7: Analyzing Network Traffic with Wireshark
 
-To download dd file: https://cfreds-archive.nist.gov/dfr-test-images.html
 open wireshark 
 press eth0 or wifi
 start capturing packets
 
 Exp 8: Investigating a Cyber Incident using Forensics Tools
 
+To download dd file: https://cfreds-archive.nist.gov/dfr-test-images.html
 Autopsy
 open and create a case
 install any image(.dd) file and upload and scan 
