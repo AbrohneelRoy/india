@@ -1,7 +1,0 @@
-ip link show
-sudo apt update
-sudo apt install -y suricata
-sudo suricata-update
-sudo suricata -c /etc/suricata/suricata.yaml -i <IP(lo)>
-sudo apt install -y nmap
-sudo nmap -sS -Pn 127.0.0.1
